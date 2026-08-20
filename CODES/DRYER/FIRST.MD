@@ -1,4 +1,4 @@
 # PRIMER CODIGO 
 
 
-![Mi Foto](IMAGES/PHOTO.png)
+![Mi Foto](../../IMAGES/PHOTO.png)
