@@ -1,0 +1,4 @@
+# PRIMER CODIGO 
+
+
+![Mi Foto](IMAGES/PHOTO.png)
