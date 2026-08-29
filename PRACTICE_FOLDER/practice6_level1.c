@@ -1,20 +1,49 @@
 #include <stdio.h>
 int main()
 {
-    int horas, minutos, dia;
+    int t, p, hm, horas, minutos, dia, monto1, monto2, monto3, faltante, total;
     printf("digite cuantas horas lleva: ");
     scanf("%d", &horas);
     printf("digite cuantos minutos lleva: ");
     scanf("%d", &minutos);
     printf("digite que dia de la semana es: ");
     scanf("%d", &dia);
+    hm = horas * 60 + minutos;
 
-    if (horas < 2)
+    if (hm > 1)
     {
-        printf("el costo es de 15 dolares");
+        monto1 = 15;
     }
-    else if (2 < horas && horas < 6)
+    if (hm > 60)
     {
-        printf("el costo es de 10 dolares");
+        t = hm - 60;
+        p = t / 60;
+        faltante = (1 - p) * -1;
+        if (faltante < 1 && faltante > 0)
+        {
+            monto3 = (p + faltante) * 5;
+        }
+        else
+        {
+            monto3 = p * 5;
+        }
     }
+    if (hm > 300)
+    {
+        t = hm - 300;
+        p = t / 60;
+        faltante = (1 - p) * -1;
+        if (faltante < 1 && faltante > 0)
+        {
+            monto3 = (p + faltante) * 5;
+        }
+        else
+        {
+            monto3 = p * 5;
+        }
+    }
+
+    total = monto1 + monto2 + monto3;
+    printf("el total a pagar es: %d", total);
+    return 0;
 }
