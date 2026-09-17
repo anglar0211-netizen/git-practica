@@ -92,13 +92,15 @@ void menuCalculadora(int eleccion, int array[], int tamano)
         mostrarArrayyDirecciones(array, TAM);
         break;
     case 2:
-
+        obtenerMaximo(array, TAM);
         printf("Este es el numero mayor de ese arreglo %d", obtenerMaximo(array, tamano));
         break;
     case 3:
+        obtenerMinimo(array, TAM);
         printf("Este es el numero menor de ese arreglo %d", obtenerMinimo(array, tamano));
         break;
     case 4:
+        obtenerPromedio(array, TAM);
         printf("Este es el promedio de ese arreglo %f", obtenerPromedio(array, tamano));
         break;
     case 5:
